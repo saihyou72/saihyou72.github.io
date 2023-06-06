@@ -30,29 +30,181 @@
 
   <link href="./resources/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./resources/css/bootstrap-icons.css">
+  <link rel="stylesheet" href="./resources/css/pretendardvariable.css">
+  <link rel="stylesheet" href="./resources/css/saihyou.css">
 
   <title>saihyou</title>
 </head>
-<body class="bg-dark">
+<body class="text-bg-dark" style="font-family: 'Pretendard Variable';">
+  <nav class="fixed-top input-group pt-2 pe-2 langselect">
+    <label for="langtoggle" class="input-group-text"><i class="bi bi-globe"></i></label>
+    <select class="form-select" id="langtoggle" onchange="toggleLang(this.value);">
+      <option value="en">&#127482;&#127480;&nbsp;English / English</option>
+      <option value="ko">&#127472;&#127479;&nbsp;한국어 / Korean</option>
+      <option value="ja">&#127471;&#127477;&nbsp;日本語 / Japanese</option>
+    </select>
+  </nav>
   <div class="text-bg-dark text-center container">
-    <div class="my-5 container-fluid d-flex flex-column align-items-center">
-      <h1 class="mb-5 fw-bold"><i class="bi bi-snow2"></i></h1>
-      <h2 class="fw-bold mb-2 fs-1">Kyuhyun Shim</h2>
-      <a href="mailto:carl-czerny50@saihyou.dev" class="btn btn-sm btn-dark" target="_blank"><i class="bi bi-envelope"></i>&nbsp;carl-czerny50@saihyou.dev</a>
-    </div>
-    <div class="container-fluid d-flex flex-column align-items-center">
-      <a href="https://twitter.com/saihyou_dev" class="btn btn-lg btn-dark fs-4 border border-1 border-light border-opacity-50 mb-3" target="_blank">
-        <i class="bi bi-twitter"></i>&nbsp;twitter
-      </a>
-      <a href="https://github.com/saihyou72" class="btn btn-lg btn-dark fs-4 border border-1 border-light border-opacity-50 mb-3" target="_blank">
-        <i class="bi bi-github"></i>&nbsp;github
-      </a>
-      <a href="https://portfolio1.saihyou.dev/" class="btn btn-lg btn-dark fs-4 border border-1 border-light border-opacity-50 mb-3" target="_blank">
-        <i class="bi bi-file-earmark-post-fill"></i>&nbsp;portfolio 1: blog sample
-      </a>
-    </div>
+    <header class="my-5 container-fluid d-flex flex-column align-items-center">
+      <i class="bi bi-snow2 d-inline-block mb-3" style="font-size:5rem;"></i>
+      <h2 class="fw-bold mb-2 fs-1" lang="en">Kyuhyun Shim</h2>
+      <h2 class="fw-bold mb-2 fs-1" lang="ko">심규현</h2>
+      <h2 class="fw-bold mb-2 fs-1" lang="ja">シム・キュヒョン</h2>
+      <div class="d-flex flex-column flex-sm-row flex-sm-wrap">
+        <a href="mailto:carl-czerny50@saihyou.dev" class="btn btn-sm btn-dark" target="_blank">
+          <i class="bi bi-envelope"></i>&nbsp;carl-czerny50@saihyou.dev
+        </a>
+        <a href="https://twitter.com/saihyou_dev" class="btn btn-sm btn-dark" target="_blank">
+          <i class="bi bi-twitter"></i>&nbsp;@saihyou_dev
+        </a>
+        <a href="https://github.com/saihyou72" class="btn btn-sm btn-dark" target="_blank">
+          <i class="bi bi-github"></i>&nbsp;saihyou72
+        </a>
+      </div>      
+    </header>
+    <section class="accordion accordion-flush" id="webResumeAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#collapseOne" 
+            aria-expanded="true" 
+            aria-controls="collapseOne">
+            <div class="fw-bold fs-3">
+              <span lang="en">
+                About Me
+              </span>
+              <span lang="ko">
+                자기소개
+              </span>
+              <span lang="ja">
+                自己紹介
+              </span>
+            </div>
+          </button>
+        </h2>
+        <div id="collapseOne" 
+          class="accordion-collapse collapse show" 
+          data-bs-parent="#webResumeAccordion">
+          <div class="accordion-body webresume-content">
+            <div lang="en">
+              About Me
+            </div>
+            <div lang="ko">
+              <ul>
+                <li>이름: 심규현</li>
+              </ul>
+            </div>
+            <div lang="ja">
+              <ul>
+                <li><b>名前</b>：沈 揆炫（シム・キュヒョン）</li>
+                <li><b>学歴・職歴</b>
+                  <ul>
+                    <li>(2013.03~2022.02) 延世大学(韓国、ソウル)で物理学専攻</li> 
+                    <li>(2018.03~2018.08) GoniGlobal(通販会社) - 翻訳家(アルバイト、英↔韓↔日)</li>
+                    <li>(2022.09~2023.05) JSL人材開発院(韓国、大田)でハイブリッドソフトウェア専門家過程を修了</li>
+                  </ul>                  
+                </li>
+                <li><b>趣味</b>
+                  <ul>
+                    <li>自作PC組み立て：かなり経験があると自負します。</li>
+                    <li><b><i class="bi bi-star-fill"></i>セルフホスティング</b>：最近結構ハマっています。万能技術Dockerを使ってポートフォリオ用のサンプルサイト、それらに関するデータベース、ウェブアプリケーションサーバーなどをすべてコンテナで導入し、リバースプロキシでサブドメインを指定しました。Webサーバー以外にも私自身の便利のためパスワードマネージャー、二段階認証、Gitレポジトリー管理をセルフホスティングでやっています。
+                      <ul>
+                        <li><small>ちなみに、このポートフォリオページはGitHub Pagesを使ってデプロイしています。(レポジトリーは <a href="https://github.com/saihyou72/saihyou72.github.io" class="text-light fw-bold" target="_blank"><i class="bi bi-box-arrow-up-right"></i>こちら</a>)静的サイトなんですから、簡単に構築したかったので。それをCloudflareにメインドメインとして登録しました。</small></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" 
+            type="button" data-bs-toggle="collapse" 
+            data-bs-target="#collapseTwo" 
+            aria-expanded="false" 
+            aria-controls="collapseTwo">
+            <div class="fw-bold fs-3">
+              (WIP)専門知識
+            </div>
+          </button>
+        </h2>
+        <div id="collapseTwo" 
+          class="accordion-collapse collapse" 
+          data-bs-parent="#webResumeAccordion">
+          <div class="accordion-body webresume-content">
+            <ul>
+              <li><b>(WIP)</b>
+                <ul>
+                  <li>Java
+                    <ul>
+                      <li>JSP/Servlet</li>
+                      <li>Spring</li>
+                      <li></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" 
+            type="button" data-bs-toggle="collapse" 
+            data-bs-target="#collapseThree" 
+            aria-expanded="false" 
+            aria-controls="collapseThree">
+            <div class="fw-bold fs-3">
+              (WIP)Portfolio
+            </div>
+          </button>
+        </h2>
+        <div id="collapseThree" 
+          class="accordion-collapse collapse" 
+          data-bs-parent="#webResumeAccordion">
+          <div class="accordion-body webresume-content">
+            (WIP)
+            <a href="https://portfolio1.saihyou.dev/" class="btn btn-lg btn-dark fs-4 border border-1 border-light border-opacity-50 mb-3" target="_blank">
+              <i class="bi bi-file-earmark-post-fill"></i>&nbsp;portfolio 1: blog sample
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
   
   <script src="./resources/js/bootstrap.bundle.min.js"></script>
+  <script src="./resources/js/jquery.min.js"></script>
+  <script>
+    $(function() {
+      var lang = getLang().substr(0, 2)
+      toggleLang(lang)
+    })
+
+    var getLang = () => {
+      if (navigator.languages != undefined) 
+        return navigator.languages[0]
+      return navigator.language
+    }
+
+    const langs = ["en", "ko", "ja"]
+    
+    const toggleLang = la => {
+      langs.forEach(i => {
+        if (i === la) {
+          $('[lang="' + i + '"]').show()
+        } else {
+          $('[lang="' + i + '"]').hide()
+        }
+      })
+      $('#langtoggle').val(la)
+    }
+  </script>
 </body>
 </html>
