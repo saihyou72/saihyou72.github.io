@@ -66,6 +66,7 @@
       <div class="accordion-item">
         <h2 class="accordion-header">
           <button class="accordion-button" 
+            id="buttonOne"
             type="button" 
             data-bs-toggle="collapse" 
             data-bs-target="#collapseOne" 
@@ -85,15 +86,15 @@
           </button>
         </h2>
         <div id="collapseOne" 
-          class="accordion-collapse collapse show" 
-          data-bs-parent="#webResumeAccordion">
-          <div class="accordion-body webresume-content">
+          class="accordion-collapse collapse show">
+          <div class="accordion-body">
             <div lang="en">
-              About Me
+              WIP
             </div>
             <div lang="ko">
               <ul>
                 <li>이름: 심규현</li>
+                <li>WIP</li>
               </ul>
             </div>
             <div lang="ja">
@@ -108,12 +109,29 @@
                 </li>
                 <li><b>趣味</b>
                   <ul>
-                    <li>自作PC組み立て：かなり経験があると自負します。</li>
-                    <li><b><i class="bi bi-star-fill"></i>セルフホスティング</b>：最近結構ハマっています。万能技術Dockerを使ってポートフォリオ用のサンプルサイト、それらに関するデータベース、ウェブアプリケーションサーバーなどをすべてコンテナで導入し、リバースプロキシでサブドメインを指定しました。Webサーバー以外にも私自身の便利のためパスワードマネージャー、二段階認証、Gitレポジトリー管理をセルフホスティングでやっています。
+                    <li>自作PC組み立て：一番長らく持っている趣味です。可処分所得のほとんどがこれに使われます。
                       <ul>
-                        <li><small>ちなみに、このポートフォリオページはGitHub Pagesを使ってデプロイしています。(レポジトリーは <a href="https://github.com/saihyou72/saihyou72.github.io" class="text-light fw-bold" target="_blank"><i class="bi bi-box-arrow-up-right"></i>こちら</a>)静的サイトなんですから、簡単に構築したかったので。それをCloudflareにメインドメインとして登録しました。</small></li>
+                        <li>自作PCコミュニティで活動するのも結構好きで、</li>
                       </ul>
                     </li>
+                    <li><b><i class="bi bi-star-fill"></i>セルフホスティング</b>：下の<a href="javascript:toSelfhost();" class="text-light fw-bold">「セルフホスティング？」</a>セクションで説明します。
+                      <!-- 最近結構ハマっています。万能技術Dockerを使ってポートフォリオ用のサンプルサイト、それらに関するデータベース、ウェブアプリケーションサーバーなどをすべてコンテナで導入し、リバースプロキシでサブドメインを指定しました。Webサーバー以外にも私自身の便利のためパスワードマネージャー、二段階認証、Gitレポジトリー管理をセルフホスティングでやっています。
+                      <ul>
+                        <li>
+                          <small>ちなみに、このポートフォリオページはGitHub Pagesを使ってデプロイしています。(レポジトリーは <a href="https://github.com/saihyou72/saihyou72.github.io" class="text-light fw-bold" target="_blank"><i class="bi bi-box-arrow-up-right"></i>こちら</a>)静的サイトなんですから、簡単に構築したかったので。それをCloudflareにメインドメインとして登録しました。</small>
+                        </li>
+                      </ul> -->
+                    </li>
+                    <li>音楽鑑賞：フューチャーベース大好きです！</li>
+                    <li>ゲーム：自作PC趣味との相性が非常に高いです。もちろんスイッチもプレステも持っています。</li>
+                    <li>パワーウォーキング：「全身で歩く」運動です。簡単そうに見えて実際にもそうなんですが、面白いところも結構あると思います。</li>
+                  </ul>
+                </li>
+                <li><b>得意なこと(IT以外)</b>
+                  <ul>
+                    <li>教えること：JSL人材開発院で研修を受ける時に、同期の研修生がJavaの理解に苦しまないように、授業中に整理しておいたノートを<a class="text-light fw-bold" target="_blank" href="https://github.com/Kade-JSL/JSL56-Lectures"><i class="bi bi-box-arrow-up-right"></i>GitHubで共有(韓国語ですけど)</a>してあげたことがあります。文書の形以外にも困っている同期生を見たら積極的に教えてあげたりします。なぜならそうやって整理するのが得意ですし、理解したものを他の方たちと共有するのが好きだからです。</li>
+                    <li>英語：翻訳家として働いていましたし、個人的にも言語を学ぶのが好きです。このページも韓国語と英語に対応しています。</li>
+                    <li>検索：情報検索がただ好きです。何か気になったらなんでも検索します。クラゲの生態から、鹿児島市にある火山研究所までそのトピックは様々です。</li>
                   </ul>
                 </li>
               </ul>
@@ -124,32 +142,62 @@
       <div class="accordion-item">
         <h2 class="accordion-header">
           <button class="accordion-button collapsed" 
-            type="button" data-bs-toggle="collapse" 
+            type="button" 
+            data-bs-toggle="collapse" 
             data-bs-target="#collapseTwo" 
             aria-expanded="false" 
             aria-controls="collapseTwo">
             <div class="fw-bold fs-3">
-              (WIP)専門知識
+              <span lang="en">
+                Skills
+              </span>
+              <span lang="ko">
+                전문지식
+              </span>
+              <span lang="ja">
+                専門知識
+              </span>
             </div>
           </button>
         </h2>
         <div id="collapseTwo" 
-          class="accordion-collapse collapse" 
-          data-bs-parent="#webResumeAccordion">
-          <div class="accordion-body webresume-content">
-            <ul>
-              <li><b>(WIP)</b>
-                <ul>
-                  <li>Java
-                    <ul>
-                      <li>JSP/Servlet</li>
-                      <li>Spring</li>
-                      <li></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-            </ul>
+          class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <span lang="en">
+              WIP
+            </span>
+            <span lang="ko">
+              WIP
+            </span>
+            <span lang="ja">
+              <ul>
+                <li><b>Java</b>：1.8で学びました。専門的な教育を受けて、プロジェクトをしたこともあります。
+                  <ul>
+                    <li>JSP/Servlet</li>
+                    <li>Spring：STS 3で学びました。
+                      <ul>
+                        <li>Spring MVC</li>
+                        <li>DI/IoC概念</li>
+                        <li>REST API入門</li>
+                      </ul>
+                    </li>
+                    <li>Maven</li>
+                    <li>Apache Tomcat：8.5
+                      <ul>
+                        <li>簡単な設定、デプロイ</li>
+                        <li>JDBC連携</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li><b>SQL</b>：Oracleデータベース11gXEで学びました。簡単なDB設計とクエリ設計ができます。</li>
+                <li><b>HTML/CSS</b>：このページもBootstrap 5で作りました！</li>
+                <li><b>JavaScript</b>：基本的な文法はほとんど知っていて、jQueryも使えます。</li>
+                <li><b>Docker</b>：独学ですが、Javaのプロジェクトをする時に大変役に立ちました。TomcatのコンテナとOracleデータベースのコンテナを使ってプロジェクトのウェブアプリケーションをホストしています。</li>
+                <li><b>C/C++</b>：専攻必須科目として学びました。基本だけ知っています。</li>
+                <li><b>Python</b>：基本だけ知っています。</li>
+              </ul>
+            </span>
           </div>
         </div>
       </div>
@@ -161,18 +209,93 @@
             aria-expanded="false" 
             aria-controls="collapseThree">
             <div class="fw-bold fs-3">
-              (WIP)Portfolio
+              <span lang="en">
+                Portfolio
+              </span>
+              <span lang="ko">
+                포트폴리오
+              </span>
+              <span lang="ja">
+                ポートフォリオ
+              </span>
             </div>
           </button>
         </h2>
         <div id="collapseThree" 
-          class="accordion-collapse collapse" 
-          data-bs-parent="#webResumeAccordion">
-          <div class="accordion-body webresume-content">
-            (WIP)
-            <a href="https://portfolio1.saihyou.dev/" class="btn btn-lg btn-dark fs-4 border border-1 border-light border-opacity-50 mb-3" target="_blank">
-              <i class="bi bi-file-earmark-post-fill"></i>&nbsp;portfolio 1: blog sample
-            </a>
+          class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <span lang="en">
+              Portfolio
+            </span>
+            <span lang="ko">
+              포트폴리오
+            </span>
+            <span lang="ja">
+              <ol>
+                <li><b>ブログプロジェクト</b>
+                  <ul>
+                    <li><b>期間</b>：2023.01~2023.02</li>
+                    <li><b>重点機能</b>：会員登録、掲示板のCRUD、コメント</li>
+                    <li><b>プロジェクト発表資料</b>：<a class="text-light" target="_blank" href="./resources/portfolio1-presentation.pdf">「実際に使える私のブログを目指して」</a></li>
+                    <li><b>結果物(ウェブサイト)</b>：<a class="btn btn-sm btn-dark border border-1 border-light border-opacity-50" target="_blank" href="https://portfolio1.saihyou.dev/"><i class="bi bi-box-arrow-up-right"></i>&nbsp;こちら！</a></li>
+                    <li><b>使用技術・ツール</b>
+                      <ul>
+                        <li>開発環境：Eclipse 2020-06(4.16.0)</li>
+                        <li>JSP/Servlet：JSTL</li>
+                        <li>Apache Tomcat</li>
+                        <li>Oracle DB 11.2.0 XE</li>
+                        <li>HTML/CSS：Bootstrap 3</li>
+                        <li>JavaScript：jQuery、Ajax</li>
+                        <li>Docker：ウェブアプリケーションの実装・ホスティングに利用</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li><b>(未完成)ショッピングモールプロジェクト</b>
+                  <ul>
+                    <li>ショッピングカート、管理者メニューを実装。</li>
+                    <li>ローカルで開発したためお見せするリンクがありません。</li>
+                  </ul>
+                </li>
+              </ol>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item" lang="ja">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" 
+            id="buttonFour"
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#collapseFour" 
+            aria-expanded="false" 
+            aria-controls="collapseFour">
+            <div class="fw-bold fs-3">
+              <span lang="en">
+                Self Hosting?
+              </span>
+              <span lang="ko">
+                셀프호스팅?
+              </span>
+              <span lang="ja">
+                セルフホスティング？
+              </span>
+            </div>
+          </button>
+        </h2>
+        <div id="collapseFour" 
+          class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <span lang="en">
+              WIP
+            </span>
+            <span lang="ko">
+              WIP
+            </span>
+            <span lang="ja">
+              WIP
+            </span>
           </div>
         </div>
       </div>
@@ -205,6 +328,11 @@
       })
       $('#langtoggle').val(la)
     }
+    
+    const toSelfhost = () => {
+      $('#buttonFour').removeClass('collapsed')
+      $('#collapseFour').addClass('show')
+      location.hash = "#collapseFour";
+    }
   </script>
-</body>
 </html>
