@@ -39,3 +39,7 @@ li {
     word-spacing: 0.15rem;
     line-height: 2rem;
 }
+
+[lang] > ul > li > b, [lang] > ol > li > b {
+    font-size: 1.15rem;
+}
