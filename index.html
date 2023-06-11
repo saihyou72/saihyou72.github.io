@@ -36,13 +36,19 @@
   <title>saihyou</title>
 </head>
 <body class="text-bg-dark" style="font-family: 'Pretendard Variable';">
-  <nav class="fixed-top input-group pt-2 pe-2 langselect">
-    <label for="langtoggle" class="input-group-text"><i class="bi bi-globe"></i></label>
-    <select class="form-select" id="langtoggle" onchange="toggleLang(this.value);">
-      <option value="en">&#127482;&#127480;&nbsp;English / English</option>
-      <option value="ko">&#127472;&#127479;&nbsp;한국어 / Korean</option>
-      <option value="ja">&#127471;&#127477;&nbsp;日本語 / Japanese</option>
-    </select>
+  <nav>
+    <code class="position-absolute top-0 start-0 ms-2 mt-2" style="font-size: 0.7rem; color: var(--bs-light);">
+      <span lang="en">Last updated </span>
+      <span lang="ja">最終更新日付：</span>2023/06/10<span lang="ko"> 기준</span>
+    </code>
+    <div class="fixed-top input-group langselect me-2 mt-2">
+      <label for="langtoggle" class="input-group-text"><i class="bi bi-globe"></i></label>
+      <select class="form-select" id="langtoggle" onchange="toggleLang(this.value);">
+        <option value="en">&#127482;&#127480;&nbsp;English / English</option>
+        <option value="ko">&#127472;&#127479;&nbsp;한국어 / Korean</option>
+        <option value="ja">&#127471;&#127477;&nbsp;日本語 / Japanese</option>
+      </select>
+    </div>
   </nav>
   <div class="text-bg-dark text-center container">
     <header class="my-5 container-fluid d-flex flex-column align-items-center">
@@ -100,15 +106,15 @@
                 </li>
                 <li><b>Hobbies</b>
                   <ul>
-                    <li>DIY PC: My longest hobby. I spend nearly all of my disposable income in this.
+                    <li><b>DIY PC</b>: My longest hobby. I spend nearly all of my disposable income in this.
                       <ul>
                         <li>And like to communicate with other PC enthusiasts in forums.</li>
                       </ul>
                     </li>
                     <li><b><i class="bi bi-star-fill"></i>Self hosting</b>: More on that later, in <a href="javascript:toSelfhost();" class="text-light fw-bold">「Self Hosting?」</a> section.</li>
-                    <li>Listening to music: I absolutely LOVE future/kawaii bass.</li>
-                    <li>PC gaming: Why wouldn't I? Perfect match for DIY PC hobby. I also enjoy Switch and PlayStation games, too.</li>
-                    <li>Power walking: Not just walking, walking with "power". Sounds simple, and actually it is, but there's a lot interesting things on that.</li>
+                    <li><b>Listening to music</b>: I absolutely LOVE future/kawaii bass.</li>
+                    <li><b>PC gaming</b>: Why wouldn't I? Perfect match for DIY PC hobby. I also enjoy Switch and PlayStation games, too.</li>
+                    <li><b>Power walking</b>: Not just walking, walking with "power". Sounds simple, and actually it is, but there's a lot interesting things on that.</li>
                   </ul>
                 </li>
                 <li><b>Certifications</b>
@@ -121,8 +127,8 @@
                 <li><b>I'm good at...(aside from tech)</b>
                   <ul>
                     <li><b>Teaching something</b>: When in JSL, where I recieved programming course, I had some kind of background in coding because of requied coding-related subjects in uni. So I didn't have that much trouble understanding Java firsthand. But since my colleages in the same course had zero experiences in coding whatsoever, they were in big trouble. So I made an <a class="text-light fw-bold" target="_blank" href="https://github.com/Kade-JSL/JSL56-Lectures"><i class="bi bi-box-arrow-up-right"></i>GitHub repo(in Korean, obviously)</a> of lecture memos, source codes of homework, and other docs to help my colleages. I like to help people to understand something, and outside of helping someone, I'm very into organizing docs, generally speaking.</li>
-                    <li>Japanese: Not manga or anime level, I mean business. Did japanese for jobs, can talk to Japanese people without any linguistic difficulties. Also this site is in Korean and Japanese, all translated by myself.</li>
-                    <li>Searching: I generally like searching the web for any information. Software develepment needs a ton of searching on the web, and I'm pretty good at it, especially for coming up with search keywords, and make complete information out of their results.</li>
+                    <li><b>Japanese</b>: Not manga or anime level, I mean business. Did japanese for jobs, can talk to Japanese people without any linguistic difficulties. Also this site is in Korean and Japanese, all translated by myself.</li>
+                    <li><b>Searching</b>: I generally like searching the web for any information. Software develepment needs a ton of searching on the web, and I'm pretty good at it, especially for coming up with search keywords, and make complete information out of their results.</li>
                   </ul>
                 </li>
               </ul>
@@ -146,22 +152,22 @@
                 </li>
                 <li><b>취미</b>
                   <ul>
-                    <li>PC조립: 가장 오래 하고 있는 취미입니다. 가처분소득의 대부분을 여기 쓰고 있죠.
+                    <li><b>PC조립</b>: 가장 오래 하고 있는 취미입니다. 가처분소득의 대부분을 여기 쓰고 있죠.
                       <ul>
                         <li>PC 커뮤니티에서 활동하는 것도 좋아합니다.</li>
                       </ul>
                     </li>
                     <li><b><i class="bi bi-star-fill"></i>셀프호스팅</b>：아래의 <a href="javascript:toSelfhost();" class="text-light fw-bold">「셀프호스팅?」</a> 문단에서 설명하겠습니다.</li>
-                    <li>음악감상: 퓨처베이스 완전 좋아합니다.</li>
-                    <li>게임: 게이밍PC를 조립하면 위의 취미와 궁합이 아주 좋습니다. 물론 스위치 게임도 플스 게임도 합니다.</li>
-                    <li>파워워킹: '온몸으로 걷는' 운동 되겠습니다. 간단해 보이고 실제로 그렇습니다만, 꽤나 재밌는 부분도 많습니다.</li>
+                    <li><b>음악감상</b>: 퓨처베이스 완전 좋아합니다.</li>
+                    <li><b>게임</b>: 게이밍PC를 조립하면 위의 취미와 궁합이 아주 좋습니다. 물론 스위치 게임도 플스 게임도 합니다.</li>
+                    <li><b>파워 워킹</b>: '온몸으로 걷는' 운동 되겠습니다. 간단해 보이고 실제로 그렇습니다만, 꽤나 재밌는 부분도 많습니다.</li>
                   </ul>
                 </li>
                 <li><b>특기(IT 외)</b>
                   <ul>
                     <li><b>가르치는 것</b>: JSL인재개발원에 있을 때의 이야기입니다. 코딩 경험이 없는 동기생들이 Java 이해에 어려움을 겪고 있기에, 수업 시간에 정리해 둔 노트를<a class="text-light fw-bold" target="_blank" href="https://github.com/Kade-JSL/JSL56-Lectures"><i class="bi bi-box-arrow-up-right"></i>GitHub에 공유</a>해 줬었죠. 굳이 문서 형태가 아니더라도 그냥 이해로 곤란해하는 동료들을 도와주는 걸 좋아합니다. 정리하는 것도 특기인 데다가 이해한 걸 다른 사람이랑 공유하는 것도 좋아하거든요.</li>
-                    <li>영어: 번역가로 일한 경험도 있고, 개인적으로도 언어를 배우는 걸 좋아합니다. 이 웹페이지 역시 일본어와 영어 모두 제 손으로 번역되어 있습니다.</li>
-                    <li>검색: 정보검색 자체가 그냥 좋습니다. 뭔가 궁금해지면 뭐든지 바로 검색해 봅니다. 호기심이 풀릴 때까지 멈추지 않고요. 주제도 다시마의 생태부터 최근에 나온 군함까지 다양합니다.</li>
+                    <li><b>영어</b>: 번역가로 일한 경험도 있고, 개인적으로도 언어를 배우는 걸 좋아합니다. 이 웹페이지 역시 일본어와 영어 모두 제 손으로 번역되어 있습니다.</li>
+                    <li><b>검색</b>: 정보검색 자체가 그냥 좋습니다. 뭔가 궁금해지면 뭐든지 바로 검색해 봅니다. 호기심이 풀릴 때까지 멈추지 않고요. 주제도 다시마의 생태부터 최근에 나온 군함까지 다양합니다.</li>
                   </ul>
                 </li>
               </ul>
@@ -178,15 +184,15 @@
                 </li>
                 <li><b>趣味</b>
                   <ul>
-                    <li>自作PC組み立て：一番長らく持っている趣味です。可処分所得のほとんどがこれに使われます。
+                    <li><b>自作PC組み立て</b>：一番長らく持っている趣味です。可処分所得のほとんどがこれに使われます。
                       <ul>
                         <li>自作PCコミュニティで活動するのも結構好きです。</li>
                       </ul>
                     </li>
                     <li><b><i class="bi bi-star-fill"></i>セルフホスティング</b>：下の<a href="javascript:toSelfhost();" class="text-light fw-bold">「セルフホスティング？」</a>セクションで説明します。</li>
-                    <li>音楽鑑賞：フューチャーベース大好きです！</li>
-                    <li>ゲーム：自作PC趣味との相性が非常に高いです。もちろんスイッチもプレステも持っています。</li>
-                    <li>パワーウォーキング：「全身で歩く」運動です。簡単そうに見えて実際にもそうなんですが、面白いところも結構あると思います。</li>
+                    <li><b>音楽鑑賞</b>：フューチャーベース大好きです！</li>
+                    <li><b>ゲーム</b>：自作PC趣味との相性が非常に高いです。もちろんスイッチもプレステも持っています。</li>
+                    <li><b>パワーウォーキング</b>：「全身で歩く」運動です。簡単そうに見えて実際にもそうなんですが、面白いところも結構あると思います。</li>
                   </ul>
                 </li>
                 <li><b>資格、言語</b>
@@ -199,8 +205,8 @@
                 <li><b>得意なこと(IT以外)</b>
                   <ul>
                     <li><b>教えること</b>：JSL人材開発院で研修を受ける時に、同期の研修生がJavaの理解に苦しまないように、授業中に整理しておいたノートを<a class="text-light fw-bold" target="_blank" href="https://github.com/Kade-JSL/JSL56-Lectures"><i class="bi bi-box-arrow-up-right"></i>GitHubで共有(韓国語ですけど)</a>してあげたことがあります。文書の形以外にも困っている同期生を見たら積極的に教えてあげたりします。なぜならそうやって整理するのが得意ですし、理解したものを他の方たちと共有するのが好きだからです。</li>
-                    <li>英語：翻訳家として働いていましたし、個人的にも言語を学ぶのが好きです。このページも韓国語と英語に自分で翻訳し、対応しています。</li>
-                    <li>検索：情報検索がただ好きです。何か気になったらなんでも検索します。好奇心が満たされるまで、諦めもせずに。クラゲの生態から、鹿児島市にある火山研究所までそのトピックは様々です。</li>
+                    <li><b>英語</b>：翻訳家として働いていましたし、個人的にも言語を学ぶのが好きです。このページも韓国語と英語に自分で翻訳し、対応しています。</li>
+                    <li><b>検索</b>：情報検索がただ好きです。何か気になったらなんでも検索します。好奇心が満たされるまで、諦めもせずに。クラゲの生態から、鹿児島市にある火山研究所までそのトピックは様々です。</li>
                   </ul>
                 </li>
               </ul>
@@ -361,7 +367,7 @@
                     <li><b>結果物(ウェブサイト)</b>：<a class="btn btn-sm btn-dark border border-1 border-light border-opacity-50" target="_blank" href="https://portfolio1.saihyou.dev/"><i class="bi bi-box-arrow-up-right"></i>&nbsp;こちら！</a></li>
                     <li><b>使用技術・ツール</b>
                       <ul>
-                        <li>開発環境：Eclipse 2020-06(4.16.0)</li>
+                        <li><b>開発環境</b>：Eclipse 2020-06(4.16.0)</li>
                         <li>JSP/Servlet：JSTL</li>
                         <li>Apache Tomcat</li>
                         <li>Oracle DB 11.2.0 XE</li>
@@ -416,7 +422,8 @@
             </div>
             <div lang="ja">
               <ul>
-                <li>最近結構ハマっています。万能技術Dockerを使って…
+                <li>最近結構ハマっています。</li>
+                <li>万能技術Dockerを使って…
                   <ul>
                     <li>ポートフォリオ用のサンプルサイト</li>
                     <li>それらに関するデータベース(Oracle 11g XE)</li>
